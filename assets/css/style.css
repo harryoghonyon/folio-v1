@@ -57,7 +57,7 @@ table {
     --style-font: SeoulHangang;
     --body-color: #000000;
     --font-color: #CCCFCA;
-    --text-shadow: 0rem 0.625rem 1.25rem 0rem #CCCFCA66;
+    --text-shadow: 0 0 5px #cccfcabf;
     --mobile-header-button-padding: 0.6875rem 1.0625rem;
     --mobile-header-button-font-size: 0.8125rem;
     --button-background-color: #1C1C1C;
@@ -90,6 +90,7 @@ body {
     font-family: var(--style-font);
     color: var(--font-color);
     font-size: var(--time-location-font-size);
+    text-shadow: var(--text-shadow);
 }
 
 .main-btn {
@@ -101,6 +102,8 @@ body {
     border-radius: var(--button-border-radius);
     border: var(--mobile-border);
     transition: all 0.3s ease;
+    cursor: pointer;
+    text-shadow: var(--text-shadow);
 }
 
 .main-btn:hover {
@@ -273,3 +276,81 @@ h1 {
 }
 
 /* End */
+
+
+
+/* Work Page Styles */
+
+:root {
+    --work-detiails-font-size: 0.6875rem;
+    --work-detiails-line-height: 1.1375rem;
+    --works-name-margin-bottom: 1rem;
+    --work-button-wrap-margin-top: 2rem;
+    --work-wrap-padding-top: 0.625rem;
+    --work-wrap-padding-bottom: 1.25rem;
+    --work-wrap-border: 1px solid #202020;
+    --work-margin-top: 3rem;
+    --work-container-margin-top: 1rem;
+}
+
+
+
+h3 {
+    font-family: var(--style-font);
+    font-size: var(--mobile-h1-font-size);
+    line-height: var(--mobile-h1-font-line-height);
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+    margin-bottom: var(--mobile-h1-margin-bottom);
+}
+
+.works-name {
+    margin-bottom: --works-name-margin-bottom;
+}
+
+.work-details {
+    font-family: var(--font-regular);
+    font-size: var(--work-detiails-font-size);
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+    line-height: var(--work-detiails-line-height);
+}
+
+.work-detials-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-work-details-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-button-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.work-button-wrap{
+    margin-top: var(--work-button-wrap-margin-top);
+}
+
+.work-wrap {
+    padding-top: var(--work-wrap-padding-top);
+    padding-bottom: var(--work-wrap-padding-bottom);
+    border-top: var(--work-wrap-border);
+    border-bottom: var(--work-wrap-border);
+}
+
+.work-margin {
+    margin-top: var(--work-margin-top);
+}
+
+.work-container-margin {
+    margin-top: var(--work-container-margin-top);
+}
+
+.work-wrap-no-border {
+    border-top: 0;
+}
