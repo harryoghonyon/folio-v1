@@ -9,16 +9,15 @@ const work_images = {
       "3 screen mobile krypt.png",
     ],
   },
-  //   dol: {
-  //     position: 0,
-  //     images: [
-  //       "Preloader mobile krypt.png",
-  //       "Desktop mobile krypt.png",
-  //       "Desktop mobile krypt.png",
-  //       "Desktop section mobile krypt.png",
-  //       "3 screen mobile krypt.png",
-  //     ],
-  //   },
+  wellfed: {
+    position: 0,
+    images: [
+      "Wellfed home cover.png",
+      "Wellfed sections cover.png",
+      "Wellfed sections other cover.png",
+      "Wellfed mobile cover.png",
+    ],
+  },
 };
 
 const renderImages = (id, images, position) => {
@@ -45,11 +44,21 @@ setInterval(() => {
   });
 }, 2000);
 
-const worksName = document.querySelector(".works-name");
-const workProjectDescContainer = document.querySelector(
-  ".work-project-desc-container"
-);
+// const worksName = document.querySelector(".works-name");
+// const workProjectDescContainer = document.querySelector(
+//   ".work-project-desc-container"
+// );
 
-worksName.addEventListener("click", (e) => {
-  workProjectDescContainer.classList.toggle("toggled");
+// worksName.addEventListener("click", (e) => {
+//   workProjectDescContainer.classList.toggle("toggled");
+// });
+
+document.querySelectorAll(".header-work-details-wrap").forEach((element) => {
+  element.addEventListener("click", (e) => {
+    element.parentElement.nextElementSibling.classList.toggle("toggled");
+  });
 });
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
