@@ -39,6 +39,12 @@ table {
     font-family: SF Pro Text Semibold;
     src: url(../fonts/SF-Pro-Text-Semibold.otf);
 }
+
+@font-face {
+    font-family: SF Pro Text Thin;
+    src: url(../fonts/SF-Pro-Text-Thin.otf);
+}
+
 @font-face {
     font-family: SF Pro Text Medium;
     src: url(../fonts/SF-Pro-Text-Medium.otf);
@@ -58,6 +64,7 @@ table {
     --font-regular: SF Pro Text;
     --font-semibold: SF Pro Text Semibold;
     --font-medium: SF Pro Text Medium;
+    --font-thin: SF Pro Text Thin;
     --block-font: MonaSans;
     --style-font: SeoulHangang;
     --body-color: #080808;
@@ -540,8 +547,8 @@ a {
     align-items: center;
     justify-content: space-between;
     /* padding: 24px 0; */
-    padding-top: 18px;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     border-top: 1px solid #202020;
     /* border-bottom: 1px solid #202020; */
     padding-left: var(--mobile-nav-padding);
@@ -613,18 +620,40 @@ a {
     font-family: var(--style-font);
 }
 
-.social-links-wrap {
+.copytxt {
+    font-size: 0.9125rem;
+    font-family: var(--font-regular);
+}
+
+.social-links-container {
     display: none;
 }
 
-.social-links-1 {
+.social-links-wrap {
+    display: flex;
+}
+
+.link-wrap-1 {
     margin-right: 0.1875rem;
 }
-.social-links-3 {
+.link-wrap-2 {
     margin-left: 0.1875rem;
 }
-.social-links-2 {
+.link-wrap-3 {
     margin-left: 0.1875rem;
+}
+
+.mobile-links-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-top: 1px solid #202020;
+}
+
+.mobile-links-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -685,6 +714,10 @@ a {
         width: 100%;
         text-align: right;
     }
+
+    .mobile-fotter-links-wrap {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -695,7 +728,12 @@ a {
 
     .works-name {
         margin-bottom: 0rem;
-        margin-right: 25px;
+        margin-right: 1.5625rem;
+    }
+
+    .spotify-back-up-wrap {
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
     }
 
     /* .stroke {
@@ -760,7 +798,15 @@ a {
         text-align: center;
     }
 
-    .social-links-wrap {
+    .work-block-container {
+        margin-top: 4.375rem;
+    }
+
+    .work-margin {
+        margin-top: 4.375rem;
+    }
+
+    .social-links-container {
         display: block;
     }
 }
