@@ -1095,3 +1095,9 @@ a {
         margin-top: 6rem;
     }
 }
+
+@media (min-width: 1728px) {
+    .intro-img {
+        margin-left: -100px;
+    }
+}
