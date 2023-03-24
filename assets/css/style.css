@@ -109,7 +109,7 @@ body {
     z-index: 10;
     display: grid;
     place-items: center;
-    animation: open .3s 5s forwards linear;
+    animation: open .3s 10s forwards linear;
 }
 
 .preloader-img {
