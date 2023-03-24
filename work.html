@@ -20,13 +20,16 @@
             <p class="time-location location-txt">WAT</p>
           </div>
           <a href="./home.html">
-            <button class="main-btn">Back</button>
+            <button id="work-abt-btn" class="main-btn">Back</button>
           </a>
         </div>
       </nav>
     </header>
 
     <main>
+      <audio id="hover-sound">
+        <source src="./assets/audio/mixkit-plastic-bubble-click-1124.wav" />
+      </audio>
       <!-- <div class="main-padding">
         
       </div> -->
@@ -52,7 +55,7 @@
       <section class="work-section">
         <div class="work-margin">
           <div class="work-container">
-            <div class="work-padding">
+            <div class="work-padding krypt-extra-padding">
               <div class="work-wrap">
                 <div class="header-work-details-wrap">
                   <h3 class="works-name">Krypt Labs</h3>
@@ -65,13 +68,86 @@
                 <span class="stroke"></span>
 
                 <div class="work-button-wrap">
-                  <button class="feat-work-btn main-btn">Live Website</button>
-                  <button class="feat-work-btn main-btn">Case Study</button>
+                  <button class="feat-work-btn main-btn" id="proj-1-website">
+                    Live Website
+                  </button>
+                  <button class="feat-work-btn main-btn" id="proj-1-casestudy">
+                    Case Study
+                  </button>
                 </div>
               </div>
 
               <div class="work-project-desc-container">
-                <div class="work-img-wrap" id="krypt"></div>
+                <div class="carousel" id="carousel-1">
+                  <div class="image-container large">
+                    <img
+                      src="./assets/img/Preloader mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/Desktop mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/Desktop section mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/3 screen mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                  </div>
+
+                  <div class="image-container large" aria-hidden="true">
+                    <img
+                      src="./assets/img/Preloader mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/Desktop mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/Desktop section mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/3 screen mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                  </div>
+
+                  <div class="image-container mobile">
+                    <img
+                      src="./assets/img/Preloader mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/Desktop mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/Desktop section mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                    <img
+                      src="./assets/img/3 screen mobile krypt.png"
+                      alt=""
+                      class="slide-image"
+                    />
+                  </div>
+                </div>
 
                 <div class="work-about-role-container">
                   <div class="work-about-role-wrap">
@@ -157,8 +233,12 @@
                 <span class="stroke"></span>
 
                 <div class="work-button-wrap">
-                  <button class="feat-work-btn main-btn">Live Website</button>
-                  <button class="feat-work-btn main-btn">Case Study</button>
+                  <button class="feat-work-btn main-btn" id="proj-2-website">
+                    Live Website
+                  </button>
+                  <button class="feat-work-btn main-btn" id="proj-2-casestudy">
+                    Case Study
+                  </button>
                 </div>
               </div>
 
@@ -193,10 +273,8 @@
                       </div>
                     </div>
                     <p class="work-about-role-desc">
-                      A RANDOM DESIGN & DEVELOPMENT EXPLORATION I HAD IN MIND.
-                      WORKING ON THIS PROJECT, I WAS ABLE TO PUT MY DESIGN
-                      SKILLS TO THE TEST AND EVENTUALLY CONVERTED MY DESIGNS TO
-                      WORKING CODE.
+                      Meal plan landing page for a startup idea. My role on this
+                      project includes Design & Front-end development.
                     </p>
                   </div>
 
@@ -249,7 +327,9 @@
                 <span class="stroke"></span>
 
                 <div class="work-button-wrap">
-                  <button class="feat-work-btn main-btn">Live Website</button>
+                  <button class="feat-work-btn main-btn" id="proj-3-website">
+                    Live Website
+                  </button>
                 </div>
               </div>
 
@@ -284,10 +364,9 @@
                       </div>
                     </div>
                     <p class="work-about-role-desc">
-                      A RANDOM DESIGN & DEVELOPMENT EXPLORATION I HAD IN MIND.
-                      WORKING ON THIS PROJECT, I WAS ABLE TO PUT MY DESIGN
-                      SKILLS TO THE TEST AND EVENTUALLY CONVERTED MY DESIGNS TO
-                      WORKING CODE.
+                      Edekke recently revamped the look of its homepage. I
+                      worked with the design team & participated in the redesign
+                      project as a Product Design Intern.
                     </p>
                   </div>
 
@@ -340,7 +419,9 @@
                 <span class="stroke"></span>
 
                 <div class="work-button-wrap">
-                  <button class="feat-work-btn main-btn">Case Study</button>
+                  <button class="feat-work-btn main-btn" id="proj-4-casestudy">
+                    Case Study
+                  </button>
                 </div>
               </div>
 
@@ -375,10 +456,9 @@
                       </div>
                     </div>
                     <p class="work-about-role-desc">
-                      A RANDOM DESIGN & DEVELOPMENT EXPLORATION I HAD IN MIND.
-                      WORKING ON THIS PROJECT, I WAS ABLE TO PUT MY DESIGN
-                      SKILLS TO THE TEST AND EVENTUALLY CONVERTED MY DESIGNS TO
-                      WORKING CODE.
+                      Admin backend system for an e-commerce website. From the
+                      backend, the admin can view orders, emails & list of all
+                      customers.
                     </p>
                   </div>
 
@@ -431,7 +511,9 @@
                 <span class="stroke"></span>
 
                 <div class="work-button-wrap">
-                  <button class="feat-work-btn main-btn">Case Study</button>
+                  <button class="feat-work-btn main-btn" id="proj-5-casestudy">
+                    Case Study
+                  </button>
                 </div>
               </div>
 
@@ -466,10 +548,9 @@
                       </div>
                     </div>
                     <p class="work-about-role-desc">
-                      A RANDOM DESIGN & DEVELOPMENT EXPLORATION I HAD IN MIND.
-                      WORKING ON THIS PROJECT, I WAS ABLE TO PUT MY DESIGN
-                      SKILLS TO THE TEST AND EVENTUALLY CONVERTED MY DESIGNS TO
-                      WORKING CODE.
+                      An app that allows users to set hydration plans and
+                      receive reminders to drink water at specific intervals
+                      throughout the day.
                     </p>
                   </div>
 
@@ -522,7 +603,9 @@
                 <span class="stroke"></span>
 
                 <div class="work-button-wrap">
-                  <button class="feat-work-btn main-btn">Case Study</button>
+                  <button class="feat-work-btn main-btn" id="proj-6-casestudy">
+                    Case Study
+                  </button>
                 </div>
               </div>
 
@@ -557,10 +640,9 @@
                       </div>
                     </div>
                     <p class="work-about-role-desc">
-                      A RANDOM DESIGN & DEVELOPMENT EXPLORATION I HAD IN MIND.
-                      WORKING ON THIS PROJECT, I WAS ABLE TO PUT MY DESIGN
-                      SKILLS TO THE TEST AND EVENTUALLY CONVERTED MY DESIGNS TO
-                      WORKING CODE.
+                      A digital approach to combat obesity among young
+                      individuals by providing healthy meal suggestions and
+                      cooking tutorials
                     </p>
                   </div>
 
@@ -608,8 +690,11 @@
       <div class="email-block-container">
         <p class="email-txt">
           Up for collaboration and work? Send an email to
-          <a href="mailto:harrytones.design@gmail.com"
-            ><span class="email-txt-link">harrytones.design@gmail.com</span></a
+          <a
+            id="email-block-id"
+            class="email-txt-link"
+            href="mailto:harrytones.design@gmail.com"
+            >harrytones.design@gmail.com</a
           >
         </p>
       </div>
@@ -643,7 +728,11 @@
               </div>
             </div>
           </div>
-          <button onclick="scrollToTop()" class="back-to-top-btn">
+          <button
+            id="back-to-top-work-btn"
+            onclick="scrollToTop()"
+            class="back-to-top-btn"
+          >
             Back to top
           </button>
 
@@ -664,19 +753,28 @@
             <div class="mobile-links-wrap">
               <div class="social-links-wrap">
                 <div class="link-wrap link-wrap-1">
-                  <a class="social-links social-links-1 hero-p" href=""
+                  <a
+                    class="social-links social-links-1 hero-p"
+                    href="https://twitter.com/hahrytones"
+                    target="_blank"
                     >Twitter</a
                   >
                   <span class="social-links hero-p">,</span>
                 </div>
                 <div class="link-wrap link-wrap-2">
-                  <a class="social-links social-links-2 hero-p" href=""
+                  <a
+                    class="social-links social-links-2 hero-p"
+                    href="https://www.linkedin.com/in/harry-oghonyon/"
+                    target="_blank"
                     >Linkedin</a
                   >
                   <span class="social-links hero-p">,</span>
                 </div>
                 <div class="link-wrap link-wrap-3">
-                  <a class="social-links social-links-3 hero-p" href=""
+                  <a
+                    class="social-links social-links-3 hero-p"
+                    href="https://github.com/harryoghonyon"
+                    target="_blank"
                     >Github</a
                   >
                 </div>
@@ -695,6 +793,8 @@
         </div>
       </div> -->
     </main>
+    <script src="./assets/js/sound.js"></script>
     <script src="./assets/js/work.js"></script>
+    <script src="./assets/js/clock.js"></script>
   </body>
 </html>

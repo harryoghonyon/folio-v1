@@ -14,54 +14,6 @@ function time() {
 
 setInterval(time, 1000);
 
-setInterval(time, 1000);
-
-const work_images = {
-  krypt: {
-    position: 0,
-    images: [
-      "Preloader mobile krypt.png",
-      "Desktop mobile krypt.png",
-      "Desktop mobile krypt.png",
-      "Desktop section mobile krypt.png",
-      "3 screen mobile krypt.png",
-    ],
-  },
-  wellfed: {
-    position: 0,
-    images: [
-      "Wellfed home cover.png",
-      "Wellfed sections cover.png",
-      "Wellfed sections other cover.png",
-      "Wellfed mobile cover.png",
-    ],
-  },
-};
-
-const renderImages = (id, images, position) => {
-  document.getElementById(id).innerHTML = `
-                <img
-                  class="work-img"
-                  src="./assets/img/${images[position]}"
-                  alt=""
-                  loading="lazy"
-                />
-    `;
-};
-
-setInterval(() => {
-  document.querySelectorAll(".work-img-wrap").forEach((element) => {
-    const work_items = work_images[element.id];
-    renderImages(element.id, work_items.images, work_items.position);
-
-    if (work_images[element.id].position + 1 >= work_items.images.length) {
-      work_images[element.id].position = 0;
-    } else {
-      work_images[element.id].position += 1;
-    }
-  });
-}, 2000);
-
 // const worksName = document.querySelector(".works-name");
 // const workProjectDescContainer = document.querySelector(
 //   ".work-project-desc-container"
@@ -80,3 +32,32 @@ document.querySelectorAll(".header-work-details-wrap").forEach((element) => {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+let carousels = document.querySelectorAll(".carousel");
+
+carousels.forEach((carousel) => {
+  let index = 0;
+  const images = document.querySelectorAll(`#${carousel.id} .mobile img`);
+  const imagecontainer = document.querySelector(`#${carousel.id} .mobile`);
+
+  let forward = true;
+
+  function runSlider() {
+    const width = window.innerWidth - 48;
+    index += forward ? 1 : -1;
+
+    if (index > images.length - 1) {
+      forward = false;
+      index--;
+    }
+
+    if (index === 0) {
+      forward = true;
+      index++;
+    }
+
+    imagecontainer.style.transform = `translateX(${-index * width}px)`;
+  }
+
+  setInterval(runSlider, 2000);
+});

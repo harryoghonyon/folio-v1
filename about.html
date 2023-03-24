@@ -20,13 +20,16 @@
             <p class="time-location location-txt">WAT</p>
           </div>
           <a href="./home.html">
-            <button class="main-btn">Back</button>
+            <button id="back-btn-abt" class="main-btn">Back</button>
           </a>
         </div>
       </nav>
     </header>
 
     <main>
+      <audio id="hover-sound">
+        <source src="./assets/audio/mixkit-plastic-bubble-click-1124.wav" />
+      </audio>
       <section class="intro-container">
         <div class="intro-block-wrap">
           <div class="intro-block">
@@ -35,23 +38,43 @@
             </div>
             <div class="intro-txt-img-flex intro-txt-img-flex-1">
               <span class="intro-block-txt">I'M HARRY OGHONYON</span>
-              <span class="intro-img-wrap">
-                <img
-                  class="intro-img"
-                  src="./assets/img/Info img small.png"
+              <div class="intro-img-wrap">
+                <!-- <img
+                  src=".//assets/img/me pic 1.png"
                   alt=""
+                  class="intro-img intro-img-1"
                 />
-              </span>
+                <img
+                  src=".//assets/img/me pic 2.png"
+                  alt=""
+                  class="intro-img intro-img-2"
+                /> -->
+                <img
+                  src=".//assets/img/me pic 3.png"
+                  alt=""
+                  class="intro-img intro-img-3"
+                />
+              </div>
             </div>
 
             <div class="intro-txt-container-2">
               <div class="intro-txt-img-flex intro-txt-img-flex-2">
                 <span class="intro-block-txt">HELLO! I'M HARRY OGHONYON</span>
                 <span class="intro-img-wrap">
-                  <img
-                    class="intro-img"
-                    src="./assets/img/Info img small.png"
+                  <!-- <img
+                    src=".//assets/img/me pic 1.png"
                     alt=""
+                    class="intro-img intro-img-1"
+                  />
+                  <img
+                    src=".//assets/img/me pic 2.png"
+                    alt=""
+                    class="intro-img intro-img-2"
+                  /> -->
+                  <img
+                    src=".//assets/img/me pic 3.png"
+                    alt=""
+                    class="intro-img intro-img-3"
                   />
                 </span>
               </div>
@@ -190,8 +213,8 @@
 
             <div class="skills-p-wrap">
               <p class="skills-p about-p">Front-end Development</p>
-              <p class="skills-p about-p">HTML</p>
-              <p class="skills-p about-p">CSS</p>
+              <p class="skills-p about-p">HTML5</p>
+              <p class="skills-p about-p">CSS3</p>
               <p class="skills-p about-p">JavaScript</p>
             </div>
 
@@ -212,33 +235,16 @@
         </div>
       </div>
 
-      <div class="my-img-container">
-        <div class="my-img-wrap">
-          <img
-            class="my-img my-img-1"
-            src=".//assets/img/me pic 1.png"
-            alt=""
-          />
-          <img
-            class="my-img my-img-2"
-            src=".//assets/img/me pic 2.png"
-            alt=""
-          />
-          <img
-            class="my-img my-img-3"
-            src=".//assets/img/me pic 3.png"
-            alt=""
-          />
-        </div>
-      </div>
-
       <!-- Email Block -->
 
       <div class="email-block-container">
         <p class="email-txt">
           Up for collaboration and work? Send an email to
-          <a href="mailto:harrytones.design@gmail.com"
-            ><span class="email-txt-link">harrytones.design@gmail.com</span></a
+          <a
+            id="email-block-id"
+            class="email-txt-link"
+            href="mailto:harrytones.design@gmail.com"
+            >harrytones.design@gmail.com</a
           >
         </p>
       </div>
@@ -256,23 +262,38 @@
           <div class="social-links-container">
             <div class="social-links-wrap">
               <div class="link-wrap link-wrap-1">
-                <a class="social-links social-links-1 hero-p" href=""
+                <a
+                  class="social-links social-links-1 hero-p"
+                  href="https://twitter.com/hahrytones"
+                  target="_blank"
                   >Twitter</a
                 >
                 <span class="social-links hero-p">,</span>
               </div>
               <div class="link-wrap link-wrap-2">
-                <a class="social-links social-links-2 hero-p" href=""
+                <a
+                  class="social-links social-links-2 hero-p"
+                  href="https://www.linkedin.com/in/harry-oghonyon/"
+                  target="_blank"
                   >Linkedin</a
                 >
                 <span class="social-links hero-p">,</span>
               </div>
               <div class="link-wrap link-wrap-3">
-                <a class="social-links social-links-3 hero-p" href="">Github</a>
+                <a
+                  class="social-links social-links-3 hero-p"
+                  href="https://github.com/harryoghonyon"
+                  target="_blank"
+                  >Github</a
+                >
               </div>
             </div>
           </div>
-          <button onclick="scrollToTop()" class="back-to-top-btn">
+          <button
+            id="back-to-top-btn-abt"
+            onclick="scrollToTop()"
+            class="back-to-top-btn"
+          >
             Back to top
           </button>
 
@@ -316,6 +337,8 @@
         </div>
       </footer>
     </main>
+    <script src="./assets/js/sound.js"></script>
     <script src="./assets/js/about.js"></script>
+    <script src="./assets/js/clock.js"></script>
   </body>
 </html>
