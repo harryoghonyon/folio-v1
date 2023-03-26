@@ -196,6 +196,29 @@ body {
     padding-top: 1.5rem
 }
 
+.freelance-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.freelance-txt {
+    font-family: var(--font-regular);
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+    font-size: var(--mobile-heroP-font-size);
+    line-height: var(--mobile-heroP-font-line-height);
+    letter-spacing: var(--mobile-heroP-letter-spacing);
+}
+
+.freelance-container {
+    display: none;
+}
+
+/* .blink-img {
+    margin-left: 5px;
+} */
+
 /* End */
 
 /* Main Styles */
@@ -368,6 +391,10 @@ h1 {
 
     .hero-p {
         width: 70%;
+    }
+
+    .freelance-container {
+        display: block;
     }
 }
 
