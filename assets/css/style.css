@@ -1326,3 +1326,13 @@ a {
         margin-left: -100px;
     }
 }
+
+@media (min-width: 1920px) {
+    .intro-img {
+        margin-left: -245px;
+    }
+
+    .about-p {
+        width: 80%;
+    }
+}
