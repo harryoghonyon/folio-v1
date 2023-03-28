@@ -31,32 +31,32 @@ table {
 }
 
 @font-face {
-    font-family: SF Pro Text, sans-serif;
+    font-family: SF Pro Text;
     src: url(../fonts/SF-Pro-Text-Regular.otf);
 }
 
 @font-face {
-    font-family: SF Pro Text Semibold, sans-serif;
+    font-family: SF Pro Text Semibold;
     src: url(../fonts/SF-Pro-Text-Semibold.otf);
 }
 
 @font-face {
-    font-family: SF Pro Text Thin, sans-serif;
+    font-family: SF Pro Text Thin;
     src: url(../fonts/SF-Pro-Text-Thin.otf);
 }
 
 @font-face {
-    font-family: SF Pro Text Medium, sans-serif;
+    font-family: SF Pro Text Medium;
     src: url(../fonts/SF-Pro-Text-Medium.otf);
 }
 
 @font-face {
-    font-family: SeoulHangang, sans-serif;
+    font-family: SeoulHangang;
     src: url(../fonts/SeoulHangang-ExtraBold.ttf);
 }
 
 @font-face {
-    font-family: MonaSans, sans-serif;
+    font-family: MonaSans;
     src: url(../fonts/Mona-Sans-Bold.ttf);
 }
 
