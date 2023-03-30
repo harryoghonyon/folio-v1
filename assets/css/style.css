@@ -465,7 +465,7 @@ h1 {
 }
 
 .work-container {
-    cursor: pointer;
+    /* cursor: pointer; */
     
 }
 /* .work-container:hover {
