@@ -415,6 +415,10 @@ h1 {
     :root {
         --hero-wrap-margin-top: 15rem;
     }
+    
+    .hero-p {
+        width: 60%;
+    }
 }
 
 /* End */
