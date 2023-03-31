@@ -1178,6 +1178,13 @@ a {
     letter-spacing: -0.05rem;
 }
 
+.about-p-first {
+    margin-bottom: 1.5rem;
+}
+.about-p-second {
+    margin-bottom: 1.5rem;
+}
+
 .about-p-wrap {
     margin-top: 1.5rem;
 }
@@ -1281,7 +1288,7 @@ a {
 
     .about-badge-wrap-padding {
         display: flex;
-        gap: 15.625rem;
+        gap: 8rem;
         padding-left: 5rem;
         padding-right: 5rem;
     }
@@ -1301,7 +1308,7 @@ a {
 
     .skills-wrap {
         display: flex;
-        gap: 15.625rem;
+        gap: 8rem;
         padding-left: 5rem;
         padding-right: 5rem;
     }
