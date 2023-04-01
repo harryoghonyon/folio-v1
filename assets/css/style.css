@@ -97,9 +97,9 @@ body {
     background-color: var(--body-color);
 }
 
-::selection {
-    background: #05FF00;
-}
+/* ::selection {
+    background: #027700;
+} */
 
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
