@@ -32,6 +32,16 @@ table {
 	border-spacing: 0;
 }
 
+::selection {
+    background: #05FF00;
+    color: #080808;
+}
+
+::-moz-selection {
+    background: #05FF00;
+    color: #080808;
+}
+
 @font-face {
     font-family: SF Pro Text;
     src: url(../fonts/SF-Pro-Text-Regular.otf);
@@ -914,9 +924,11 @@ a {
 
 .social-links-wrap {
     display: flex;
+    gap: 7px;
+    align-items: center;
 }
 
-.link-wrap-1 {
+/* .link-wrap-1 {
     margin-right: 0.1875rem;
 }
 .link-wrap-2 {
@@ -924,7 +936,7 @@ a {
 }
 .link-wrap-3 {
     margin-left: 0.1875rem;
-}
+} */
 
 .mobile-links-wrap {
     display: flex;
