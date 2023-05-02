@@ -1235,7 +1235,7 @@ a {
 @media (min-width: 428px) {
     .intro-txt-block-margin {
         margin-bottom: 1.8rem;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
     }
 }
 
